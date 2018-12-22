@@ -3,9 +3,9 @@
 KiCad PCB layout
 ![PCB](KiCad-PCB/pcb.jpg)
 
+* [Schematics](KiCad-PCB/Ali-FM.pdf)
 * [Interactive bom!](http://htmlpreview.github.io/?https://github.com/ok1hra/Fishing-reel-control/blob/master/KiCad-PCB/ibom.html)
 * [STEP 3D model of PCB](KiCad-PCB/Ali-FM.step)
-
 * [Firmware](https://github.com/ok1hra/Fishing-reel-control/tree/master/Arduino_firmware)
 
 ![Complete](complete.jpg)
