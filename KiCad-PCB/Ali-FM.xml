@@ -1,0 +1,1168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/dan/kicad/hra/Ali-FM/Ali-FM.sch</source>
+    <date>Út 4. prosinec 2018, 20:25:47 CET</date>
+    <tool>Eeschema (6.0.0-rc1-dev-199-g6b039bc99)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Ali fishing machine</title>
+        <company>RemoteQTH.com</company>
+        <rev>0.1</rev>
+        <date>2018-12-01</date>
+        <source>Ali-FM.sch</source>
+        <comment number="1" value="http://creativecommons.org/licenses/by-sa/4.0/"/>
+        <comment number="2" value="Licensed under the Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"/>
+        <comment number="3" value="#OK1HRA"/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="IC1">
+      <value>ATMEGA328P-A</value>
+      <footprint>Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm</footprint>
+      <datasheet>https://www.tme.eu/cz/details/atmega328p-an/rodina-avr-8-bitu/microchip-atmel/</datasheet>
+      <libsource lib="Ali-FM-rescue" part="ATMEGA328P-A-RESCUE-ip-module-RESCUE-band-decoder-RESCUE-nano-module-nano-module-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5960160C</tstamp>
+    </comp>
+    <comp ref="X1">
+      <value>16MHz</value>
+      <footprint>Crystals:Q_49U3HMS</footprint>
+      <datasheet>https://www.tme.eu/cz/details/16m-49smd-sr/krystalove-rezonatory-smd/sr-passives/</datasheet>
+      <libsource lib="Ali-FM-rescue" part="CRYSTAL-RESCUE-nano-module-nano-module-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59601663</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>33u</value>
+      <footprint>Capacitors_SMD:c_elec_5x5.7</footprint>
+      <datasheet>https://www.tme.eu/cz/details/uwx0j330mcl1gb/elektrolyticke-kondenzatory-smd-85c/nichicon/</datasheet>
+      <libsource lib="ok1hra" part="F" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>597477B5</tstamp>
+    </comp>
+    <comp ref="F1">
+      <value>PTC</value>
+      <footprint>Capacitors_SMD:C_1206</footprint>
+      <datasheet>https://www.tme.eu/cz/details/sn005-60/polymerove-pojistky-smd/ece/</datasheet>
+      <fields>
+        <field name="req">50mA</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="FUSE-RESCUE-nano-module-nano-module-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5974B87B</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>CONN_3X2</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_2x03</footprint>
+      <libsource lib="Ali-FM-rescue" part="CONN_3X2-RESCUE-nano-module-nano-module-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5979E21C</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>LF50CDT</value>
+      <footprint>Diodes_SMD:D-Pak_TO252AA</footprint>
+      <datasheet>https://www.tme.eu/cz/details/lf50cdt/stabilizatory-napeti-neregulovane-ldo/st-microelectronics/</datasheet>
+      <fields>
+        <field name="req">5V/0,5A/LDO</field>
+      </fields>
+      <libsource lib="ok1hra" part="7805" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>597D8D69</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>SS14-DC</value>
+      <footprint>Diodes_SMD:SMA_Standard</footprint>
+      <datasheet>https://www.tme.eu/cz/details/ss14-dc/diody-schottky-smd/dc-components/ss14/</datasheet>
+      <fields>
+        <field name="req">40V/1A</field>
+      </fields>
+      <libsource lib="device" part="D_ALT" description="Diode, alternativ symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A11A5FE</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>LCD-6x1-HT1621</value>
+      <footprint>ok1hra:LCD-6x1-HT1621</footprint>
+      <datasheet>https://www.ebay.com/itm/LCD-Module-6-Bit-8-Segment-3-wires-SPI-HT1621-Module-Character-LCD-for-Arduino-D/391868765851?hash=item5b3d32d69b:g:Ug4AAOSw7cxZmp86:rk:1:pf:0</datasheet>
+      <fields>
+        <field name="req">6_digit_LCD/SPI/HT1621</field>
+      </fields>
+      <libsource lib="ok1hra" part="LCD-6x1-HT1621" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C1C72CD</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>AT42QT1011-TSHR</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
+      <datasheet>https://www.tme.eu/cz/details/at42qt1011-tshr/drivery-integrovane-obvody/microchip-atmel/</datasheet>
+      <fields>
+        <field name="req"> 5–20pF/proximity_detector</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="AT42QT1011-TSHR-atmel-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BA7934D</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>LTST-C230KGKT</value>
+      <footprint>ok1hra:LED-1206-invert-mount</footprint>
+      <datasheet>https://www.tme.eu/cz/details/ltst-c230kgkt/diody-led-smd-barevne/liteon/</datasheet>
+      <fields>
+        <field name="req">2-2.4V/20mA</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="LED_ALT-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BAA2219</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BAA2744</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>0R*</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BB42CB6</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>0R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BB43981</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>22n</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.tme.eu/cz/details/grm21b5c1h223ja/kondenzatory-mlcc-smd-0805/murata/grm21b5c1h223ja01l/</datasheet>
+      <fields>
+        <field name="req">50V/C0G/5%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="C_Small-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD8368E</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>3k6</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD840F9</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="req">50V/X7R/10%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="C_Small-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BFE09EF</tstamp>
+    </comp>
+    <comp ref="R29">
+      <value>100R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BFD21DC</tstamp>
+    </comp>
+    <comp ref="R30">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BFD1F76</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>MMBF170</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>https://www.tme.eu/cz/details/mmbf170/tranzistory-s-kanalem-n-smd/on-semiconductor-fairchild/</datasheet>
+      <fields>
+        <field name="req">60V/0,5A/0,3W/1,2Ω</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="BSS138-transistors-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BF7B35C</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>AT42QT1011-TSHR</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
+      <datasheet>https://www.tme.eu/cz/details/at42qt1011-tshr/drivery-integrovane-obvody/microchip-atmel/</datasheet>
+      <fields>
+        <field name="req"> 5–20pF/proximity_detector</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="AT42QT1011-TSHR-atmel-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C6536D1</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C6536FC</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>0R*</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C653707</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>0R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C653712</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>22n</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.tme.eu/cz/details/grm21b5c1h223ja/kondenzatory-mlcc-smd-0805/murata/grm21b5c1h223ja01l/</datasheet>
+      <fields>
+        <field name="req">50V/C0G/5%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="C_Small-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C65372D</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>3k6</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C653738</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="req">50V/X7R/10%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="C_Small-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C653751</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>AT42QT1011-TSHR</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
+      <datasheet>https://www.tme.eu/cz/details/at42qt1011-tshr/drivery-integrovane-obvody/microchip-atmel/</datasheet>
+      <fields>
+        <field name="req"> 5–20pF/proximity_detector</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="AT42QT1011-TSHR-atmel-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C69173B</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C691766</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>0R*</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C691771</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>0R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C69177C</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>22n</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>https://www.tme.eu/cz/details/grm21b5c1h223ja/kondenzatory-mlcc-smd-0805/murata/grm21b5c1h223ja01l/</datasheet>
+      <fields>
+        <field name="req">50V/C0G/5%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="C_Small-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C691797</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>3k6</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C6917A2</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="req">50V/X7R/10%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="C_Small-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C6917BB</tstamp>
+    </comp>
+    <comp ref="R31">
+      <value>100R</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C74047B</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C7463DE</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C74B3FE</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C74D695</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C751494</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C78D207</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>2k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C7925D2</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C7954E7</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>CONN_01X02</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02</footprint>
+      <libsource lib="conn" part="CONN_01X02" description="Connector, single row, 01x02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C7C9058</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>TEPT5700</value>
+      <footprint>ok1hra:PhotoTransistor-inPCB</footprint>
+      <datasheet>https://www.tme.eu/cz/details/tept5700/fototranzistory/vishay/</datasheet>
+      <fields>
+        <field name="req">570nm/1,5V/50°</field>
+      </fields>
+      <libsource lib="device" part="Q_Photo_NPN" description="Phototransistor NPN, 2-pin (C=1, E=2)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C02DFB5</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C02E190</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C067150</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>4k7</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="req">0,1W/1%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="R-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C0786C5</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="req">50V/X7R/10%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="C_Small-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C0895D2</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="req">50V/X7R/10%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="C_Small-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C04EDA3</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>10n</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="req">50V/X7R/10%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="C_Small-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C069DF5</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>10n</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="req">50V/X7R/10%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="C_Small-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C06F67F</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="req">50V/X7R/10%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="C_Small-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C084778</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="req">50V/X7R/10%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="C_Small-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C0904CF</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>22p</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="req">50V/C0G/10%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="C_Small-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C09BCCC</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>22p</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="req">50V/C0G/10%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="C_Small-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C0A5D0C</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LTST-C230KGKT</value>
+      <footprint>ok1hra:LED-1206-invert-mount</footprint>
+      <datasheet>https://www.tme.eu/cz/details/ltst-c230kgkt/diody-led-smd-barevne/liteon/</datasheet>
+      <fields>
+        <field name="req">2-2.4V/20mA</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="LED_ALT-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C05A12D</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LTST-C230KGKT</value>
+      <footprint>ok1hra:LED-1206-invert-mount</footprint>
+      <datasheet>https://www.tme.eu/cz/details/ltst-c230kgkt/diody-led-smd-barevne/liteon/</datasheet>
+      <fields>
+        <field name="req">2-2.4V/20mA</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="LED_ALT-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C05A2A5</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>CONN_01X04</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04</footprint>
+      <libsource lib="conn" part="CONN_01X04" description="Connector, single row, 01x04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C0A688B</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>100n</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="req">50V/X7R/10%</field>
+      </fields>
+      <libsource lib="Ali-FM-rescue" part="C_Small-device-DLP-control-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C0DFF5F</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Ali-FM-rescue" part="AT42QT1011-TSHR-atmel-DLP-control-rescue">
+      <footprints>
+        <fp>SOT-23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AT42QT1011-TSHR-atmel-DLP-control-rescue</field>
+        <field name="Footprint">TO_SOT_Packages_SMD:SOT-23-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="output"/>
+        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="3" name="SNSK" type="passive"/>
+        <pin num="4" name="SNS" type="passive"/>
+        <pin num="5" name="VDD" type="power_in"/>
+        <pin num="6" name="SYNC" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Ali-FM-rescue" part="ATMEGA328P-A-RESCUE-ip-module-RESCUE-band-decoder-RESCUE-nano-module-nano-module-rescue">
+      <footprints>
+        <fp>28DIP-ELL600</fp>
+        <fp>28dip600</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">ATMEGA328P-A-RESCUE-ip-module-RESCUE-band-decoder-RESCUE-nano-module-nano-module-rescue</field>
+        <field name="Footprint">TQFP32</field>
+      </fields>
+      <pins>
+        <pin num="1" name="(PCINT19/OC2B/INT1)PD3" type="BiDi"/>
+        <pin num="2" name="(PCINT20/XCK/T0)PD4" type="BiDi"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="VCC" type="power_in"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="VCC" type="power_in"/>
+        <pin num="7" name="(PCINT6/XTAL1/TOSC1)PB6" type="BiDi"/>
+        <pin num="8" name="(PCINT7/XTAL2/TOSC2)PB7" type="BiDi"/>
+        <pin num="9" name="(PCINT21/OC0B/T1)PD5" type="BiDi"/>
+        <pin num="10" name="(PCINT22/OC0A/AIN0)PD6" type="BiDi"/>
+        <pin num="11" name="(PCINT23/AIN1)PD7" type="BiDi"/>
+        <pin num="12" name="(PCINT0/CLKO/ICP1)PB0" type="BiDi"/>
+        <pin num="13" name="(PCINT1/OC1A)PB1" type="BiDi"/>
+        <pin num="14" name="(PCINT2/OC1B/~SS~)PB2" type="BiDi"/>
+        <pin num="15" name="(PCINT3/OC2A/MOSI)PB3" type="BiDi"/>
+        <pin num="16" name="(PCINT4/MISO)PB4" type="BiDi"/>
+        <pin num="17" name="(PCINT5/SCK)PB5" type="BiDi"/>
+        <pin num="18" name="AVCC" type="power_in"/>
+        <pin num="19" name="ADC6" type="input"/>
+        <pin num="20" name="AREF" type="BiDi"/>
+        <pin num="21" name="GND" type="power_in"/>
+        <pin num="22" name="ADC7" type="power_in"/>
+        <pin num="23" name="(PCINT8/ADC0)PC0" type="BiDi"/>
+        <pin num="24" name="(PCINT9/ADC1)PC1" type="BiDi"/>
+        <pin num="25" name="(PCINT10/ADC2)PC2" type="BiDi"/>
+        <pin num="26" name="(PCINT11/ADC3)PC3" type="BiDi"/>
+        <pin num="27" name="(PCINT12/SDA/ADC4)PC4" type="BiDi"/>
+        <pin num="28" name="(PCINT14/SCL/ADC5)PC5" type="BiDi"/>
+        <pin num="29" name="(PCINT14/~RESET~)PC6" type="BiDi"/>
+        <pin num="30" name="(PCINT16/RXD)PD0" type="BiDi"/>
+        <pin num="31" name="(PCINT17/TXD)PD1" type="BiDi"/>
+        <pin num="32" name="(PCINT18/INT0)PD2" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="Ali-FM-rescue" part="BSS138-transistors-DLP-control-rescue">
+      <footprints>
+        <fp>SOT-23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BSS138-transistors-DLP-control-rescue</field>
+        <field name="Footprint">TO_SOT_Packages_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Ali-FM-rescue" part="CONN_3X2-RESCUE-nano-module-nano-module-rescue">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_3X2-RESCUE-nano-module-nano-module-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Ali-FM-rescue" part="CRYSTAL-RESCUE-nano-module-nano-module-rescue">
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Value">CRYSTAL-RESCUE-nano-module-nano-module-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Ali-FM-rescue" part="C_Small-device-DLP-control-rescue">
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small-device-DLP-control-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Ali-FM-rescue" part="FUSE-RESCUE-nano-module-nano-module-rescue">
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">FUSE-RESCUE-nano-module-nano-module-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Ali-FM-rescue" part="LED_ALT-device-DLP-control-rescue">
+      <footprints>
+        <fp>LED*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_ALT-device-DLP-control-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Ali-FM-rescue" part="R-device-DLP-control-rescue">
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R-device-DLP-control-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X02">
+      <description>Connector, single row, 01x02</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X02</fp>
+        <fp>Pin_Header_Angled_1X02</fp>
+        <fp>Socket_Strip_Straight_1X02</fp>
+        <fp>Socket_Strip_Angled_1X02</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X04">
+      <description>Connector, single row, 01x04</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X04</fp>
+        <fp>Pin_Header_Angled_1X04</fp>
+        <fp>Socket_Strip_Straight_1X04</fp>
+        <fp>Socket_Strip_Angled_1X04</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D_ALT">
+      <description>Diode, alternativ symbol</description>
+      <footprints>
+        <fp>Diode_*</fp>
+        <fp>D-*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_ALT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Q_Photo_NPN">
+      <aliases>
+        <alias>Q_Photo_NPN_CE</alias>
+      </aliases>
+      <description>Phototransistor NPN, 2-pin (C=1, E=2)</description>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_Photo_NPN</field>
+      </fields>
+      <pins>
+        <pin num="1" name="C" type="passive"/>
+        <pin num="2" name="E" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ok1hra" part="7805">
+      <aliases>
+        <alias>LM7805</alias>
+        <alias>LM7812</alias>
+        <alias>78L05</alias>
+      </aliases>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">7805</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VI" type="input"/>
+        <pin num="3" name="VO" type="power_out"/>
+        <pin num="4" name="GND" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="ok1hra" part="F">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">F</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="ok1hra" part="LCD-6x1-HT1621">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LCD-6x1-HT1621</field>
+      </fields>
+      <pins>
+        <pin num="1" name="CS" type="input"/>
+        <pin num="2" name="WR" type="input"/>
+        <pin num="3" name="DATA" type="input"/>
+        <pin num="4" name="GND" type="input"/>
+        <pin num="5" name="VCC" type="input"/>
+        <pin num="6" name="LED+" type="input"/>
+        <pin num="7" name="LED_K" type="input"/>
+        <pin num="8" name="LED_A" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Ali-FM-rescue">
+      <uri>/home/dan/kicad/hra/Ali-FM/Ali-FM-rescue.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="ok1hra">
+      <uri>/home/dan/kicad/hra/lib/ok1hra.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="D3" pin="1"/>
+      <node ref="C13" pin="2"/>
+      <node ref="D4" pin="1"/>
+      <node ref="C9" pin="2"/>
+      <node ref="P2" pin="6"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="R30" pin="2"/>
+      <node ref="IC1" pin="5"/>
+      <node ref="C11" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="R11" pin="1"/>
+      <node ref="P1" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U2" pin="4"/>
+      <node ref="U6" pin="4"/>
+      <node ref="C14" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="P3" pin="4"/>
+      <node ref="C10" pin="2"/>
+      <node ref="U1" pin="2"/>
+      <node ref="IC1" pin="3"/>
+      <node ref="C15" pin="1"/>
+      <node ref="U5" pin="2"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R18" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="IC1" pin="21"/>
+      <node ref="C6" pin="1"/>
+      <node ref="R14" pin="1"/>
+      <node ref="U4" pin="2"/>
+    </net>
+    <net code="2" name="Net-(R18-Pad2)">
+      <node ref="R18" pin="2"/>
+      <node ref="U5" pin="6"/>
+      <node ref="R22" pin="1"/>
+    </net>
+    <net code="3" name="Net-(D4-Pad2)">
+      <node ref="R21" pin="1"/>
+      <node ref="D4" pin="2"/>
+    </net>
+    <net code="4" name="Net-(C16-Pad2)">
+      <node ref="U5" pin="4"/>
+      <node ref="C16" pin="2"/>
+    </net>
+    <net code="5" name="/D4">
+      <node ref="U5" pin="1"/>
+      <node ref="IC1" pin="2"/>
+      <node ref="R21" pin="2"/>
+    </net>
+    <net code="6" name="Butt-2">
+      <node ref="R17" pin="1"/>
+    </net>
+    <net code="7" name="Butt-3">
+      <node ref="R23" pin="1"/>
+    </net>
+    <net code="8" name="+5V">
+      <node ref="R6" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="R5" pin="2"/>
+      <node ref="IC1" pin="4"/>
+      <node ref="C10" pin="1"/>
+      <node ref="C6" pin="2"/>
+      <node ref="IC1" pin="6"/>
+      <node ref="U6" pin="5"/>
+      <node ref="U2" pin="3"/>
+      <node ref="U1" pin="5"/>
+      <node ref="IC1" pin="18"/>
+      <node ref="P2" pin="2"/>
+      <node ref="P3" pin="1"/>
+      <node ref="C15" pin="2"/>
+      <node ref="U4" pin="5"/>
+      <node ref="C14" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="R16" pin="2"/>
+      <node ref="U5" pin="5"/>
+      <node ref="R22" pin="2"/>
+      <node ref="R27" pin="2"/>
+      <node ref="R28" pin="2"/>
+      <node ref="C11" pin="2"/>
+    </net>
+    <net code="9" name="Net-(C16-Pad1)">
+      <node ref="U5" pin="3"/>
+      <node ref="C16" pin="1"/>
+      <node ref="R23" pin="2"/>
+    </net>
+    <net code="10" name="Net-(C12-Pad2)">
+      <node ref="U4" pin="4"/>
+      <node ref="C12" pin="2"/>
+    </net>
+    <net code="11" name="Net-(R14-Pad2)">
+      <node ref="R16" pin="1"/>
+      <node ref="R14" pin="2"/>
+      <node ref="U4" pin="6"/>
+    </net>
+    <net code="12" name="/D9">
+      <node ref="IC1" pin="13"/>
+      <node ref="U4" pin="1"/>
+      <node ref="R15" pin="2"/>
+    </net>
+    <net code="13" name="Butt-1">
+      <node ref="R13" pin="1"/>
+    </net>
+    <net code="14" name="Net-(Q3-Pad1)">
+      <node ref="R30" pin="1"/>
+      <node ref="Q3" pin="1"/>
+      <node ref="R29" pin="1"/>
+    </net>
+    <net code="15" name="Net-(D3-Pad2)">
+      <node ref="D3" pin="2"/>
+      <node ref="R15" pin="1"/>
+    </net>
+    <net code="16" name="Net-(C12-Pad1)">
+      <node ref="R17" pin="2"/>
+      <node ref="C12" pin="1"/>
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="19" name="Net-(C7-Pad1)">
+      <node ref="IC1" pin="20"/>
+      <node ref="C7" pin="1"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="22" name="Net-(R10-Pad1)">
+      <node ref="R12" pin="2"/>
+      <node ref="R11" pin="2"/>
+      <node ref="R10" pin="1"/>
+    </net>
+    <net code="23" name="Net-(C4-Pad1)">
+      <node ref="R26" pin="1"/>
+      <node ref="R28" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="P3" pin="3"/>
+    </net>
+    <net code="24" name="Net-(C3-Pad1)">
+      <node ref="R27" pin="1"/>
+      <node ref="P3" pin="2"/>
+      <node ref="R25" pin="1"/>
+      <node ref="C3" pin="1"/>
+    </net>
+    <net code="25" name="Net-(R31-Pad2)">
+      <node ref="U6" pin="7"/>
+      <node ref="R31" pin="2"/>
+    </net>
+    <net code="26" name="Net-(Q3-Pad3)">
+      <node ref="Q3" pin="3"/>
+      <node ref="R31" pin="1"/>
+    </net>
+    <net code="27" name="/A7">
+      <node ref="IC1" pin="22"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="28" name="Net-(D1-Pad2)">
+      <node ref="P1" pin="1"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="29" name="Net-(C13-Pad1)">
+      <node ref="X1" pin="2"/>
+      <node ref="C13" pin="1"/>
+      <node ref="IC1" pin="7"/>
+    </net>
+    <net code="30" name="Net-(D1-Pad1)">
+      <node ref="F1" pin="1"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="31" name="Net-(C2-Pad1)">
+      <node ref="F1" pin="2"/>
+      <node ref="C2" pin="1"/>
+      <node ref="R10" pin="2"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="32" name="/RES">
+      <node ref="IC1" pin="29"/>
+      <node ref="P2" pin="5"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="33" name="/D11(MOSI)">
+      <node ref="P2" pin="4"/>
+      <node ref="IC1" pin="15"/>
+    </net>
+    <net code="34" name="/D13(SCLK)">
+      <node ref="P2" pin="3"/>
+      <node ref="U6" pin="1"/>
+      <node ref="IC1" pin="17"/>
+    </net>
+    <net code="35" name="/D12(MISO)">
+      <node ref="IC1" pin="16"/>
+      <node ref="U6" pin="2"/>
+      <node ref="P2" pin="1"/>
+    </net>
+    <net code="36" name="Net-(C9-Pad1)">
+      <node ref="X1" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="IC1" pin="8"/>
+    </net>
+    <net code="37" name="/A0">
+      <node ref="IC1" pin="23"/>
+    </net>
+    <net code="38" name="/D2">
+      <node ref="IC1" pin="32"/>
+      <node ref="R25" pin="2"/>
+    </net>
+    <net code="39" name="/D1(TXD)">
+      <node ref="IC1" pin="31"/>
+    </net>
+    <net code="40" name="/D0(RXD)">
+      <node ref="IC1" pin="30"/>
+    </net>
+    <net code="41" name="/A5(SCL)">
+      <node ref="IC1" pin="28"/>
+    </net>
+    <net code="42" name="/A4(SDA)">
+      <node ref="IC1" pin="27"/>
+    </net>
+    <net code="43" name="/A3">
+      <node ref="IC1" pin="26"/>
+    </net>
+    <net code="44" name="/A2">
+      <node ref="IC1" pin="25"/>
+    </net>
+    <net code="45" name="/A1">
+      <node ref="IC1" pin="24"/>
+    </net>
+    <net code="46" name="/D5">
+      <node ref="R29" pin="2"/>
+      <node ref="IC1" pin="9"/>
+    </net>
+    <net code="47" name="/A6">
+      <node ref="C1" pin="2"/>
+      <node ref="R12" pin="1"/>
+      <node ref="IC1" pin="19"/>
+    </net>
+    <net code="48" name="/D10(SCSn)">
+      <node ref="IC1" pin="14"/>
+    </net>
+    <net code="49" name="/D7">
+      <node ref="U6" pin="3"/>
+      <node ref="IC1" pin="11"/>
+    </net>
+    <net code="50" name="/D6">
+      <node ref="IC1" pin="10"/>
+    </net>
+    <net code="51" name="Net-(R3-Pad2)">
+      <node ref="R5" pin="1"/>
+      <node ref="R3" pin="2"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="52" name="Net-(D2-Pad2)">
+      <node ref="R4" pin="1"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="53" name="Net-(C8-Pad2)">
+      <node ref="C8" pin="2"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="54" name="/D8">
+      <node ref="U1" pin="1"/>
+      <node ref="R4" pin="2"/>
+      <node ref="IC1" pin="12"/>
+    </net>
+    <net code="55" name="Net-(C8-Pad1)">
+      <node ref="U1" pin="3"/>
+      <node ref="R13" pin="2"/>
+      <node ref="C8" pin="1"/>
+    </net>
+    <net code="56" name="Net-(U6-Pad6)">
+      <node ref="U6" pin="6"/>
+    </net>
+    <net code="57" name="Net-(U6-Pad8)">
+      <node ref="U6" pin="8"/>
+    </net>
+    <net code="58" name="/D3">
+      <node ref="R26" pin="2"/>
+      <node ref="IC1" pin="1"/>
+    </net>
+  </nets>
+</export>
