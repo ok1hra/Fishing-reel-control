@@ -3,14 +3,14 @@
 KiCad PCB layout
 ![PCB](KiCad-PCB/pcb.jpg)
 
-* [Interactive bom!](http://htmlpreview.github.io/?https://github.com/ok1hra/Fishing-reel-control/KiCad-PCB/ibom.html)
-* [STEP 3D model of PCB](KiCad-PCB/Ali-FM.step.step)
+* [Interactive bom!](http://htmlpreview.github.io/?https://github.com/ok1hra/Fishing-reel-control/blob/master/KiCad-PCB/ibom.html)
+* [STEP 3D model of PCB](KiCad-PCB/Ali-FM.step)
 
-* [Firmware](https://github.com/prusa3d/MM-control-01)
+* [Firmware](https://github.com/ok1hra/Fishing-reel-control/tree/master/Arduino_firmware)
 
 ![Complete](complete.jpg)
 
-##Functionality
+## Functionality
 * Show battery voltage at start up
 * LCD show counter, speed in metre unit + battery voltage bargraph
 * Capacitive button sensor for up, down an reset with LED light feedback
